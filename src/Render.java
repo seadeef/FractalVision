@@ -39,8 +39,8 @@ public class Render {
      */
     public Render(int width, int height, double zoom, Fractal fractal, double centerx, double centery) {
         this(width, height, zoom, fractal);
-        this.centerx = 0;
-        this.centery = 0;
+        this.centerx = centerx;
+        this.centery = centery;
     }
 
     /**
