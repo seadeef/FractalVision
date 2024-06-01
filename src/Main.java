@@ -49,7 +49,11 @@ public class Main {
         input.nextLine();
 
         System.out.print("Specify a center point (blank for default): ");
-        String center = input.nextLine();
+        String center = input.nextLine()
+                        .replace("(", "")
+                        .replace(")", "")
+                        .replace(" ", "")
+                        .strip();
         Scanner parse = new Scanner(center);
         parse.useDelimiter(",");
 
